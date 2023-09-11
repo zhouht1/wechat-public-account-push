@@ -30,6 +30,9 @@ const USER_CONFIG = {
           type: '*生日', name: '庆饱饱', year: '2002', date: '04-01',
         },
         {
+          type: '*生日', name: '天哥', year: '2003', date: '02-12',
+        },
+        {
           type: '节日', name: '相爱纪念日', year: '2020', date: '09-03',
         },
       ],
@@ -52,6 +55,9 @@ const USER_CONFIG = {
         // 注意：此条配置日期为阴历日期
         {
           type: '*生日', name: '天哥', year: '2003', date: '02-12',
+        },
+        {
+          type: '*生日', name: '庆饱饱', year: '2002', date: '04-01',
         },
         {
           type: '节日', name: '相爱纪念日', year: '2020', date: '09-03',
