@@ -27,7 +27,7 @@ const USER_CONFIG = {
       festivals: [
         // 注意：此条配置日期为阴历日期
         {
-          type: '生日', name: '庆饱饱', year: '2002', date: '04-01',
+          type: '*生日', name: '庆饱饱', year: '2002', date: '04-01',
         },
       ],
       // 我们在一起已经有xxxx天了的配置
@@ -50,7 +50,7 @@ const USER_CONFIG = {
       festivals: [
         // 注意：此条配置日期为阴历日期
         {
-          type: '生日', name: '天哥', year: '2003', date: '02-12',
+          type: '*生日', name: '天哥', year: '2003', date: '02-12',
         },
         {
           type: '节日', name: '相识纪念日', year: '2020', date: '09-03',
