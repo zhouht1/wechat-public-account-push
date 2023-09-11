@@ -1,1 +1,84 @@
-{"APP_ID":"{\"APP_ID\":\"wx9c9b231479e000d9\",\"APP_SECRET\":\"3b1eb08e7409060532e753d1413a999a\",\"IS_SHOW_COLOR\":true,\"CALLBACK_TEMPLATE_ID\":\"\",\"CALLBACK_USERS\":[{\"name\":\"自己\",\"id\":\"3b1eb08e7409060532e753d1413a999a\"}],\"USERS\":[{\"name\":\"天哥\",\"id\":\"o0cTH5kDb74CTUXx7sttyPMEES3o\",\"useTemplateId\":\"mxNj9KZGycz4IZZBVMlwjLaITEvzyvVuYbqUwbsiVs4\",\"province\":\"河北\",\"city\":\"保定\",\"horoscopeDate\":\"05-12\",\"horoscopeDateType\":\"今日\",\"openUrl\":\"https://top.baidu.com/board\",\"festivals\":[{\"type\":\"*生日\",\"name\":\"庆饱饱生日\",\"date\":\"04-01\",\"year\":\"2002\"}],\"customizedDateList\":[{\"keyword\":\"相爱纪念日\",\"date\":\"2020-10-01\"}]}],\"SWITCH\":{\"weather\":true,\"holidaytts\":true,\"CIBA\":true,\"oneTalk\":true,\"earthyLoveWords\":false,\"momentCopyrighting\":false,\"poisonChickenSoup\":false,\"poetry\":false,\"horoscope\":true,\"birthdayMessage\":true}}","APP_SECRET":"3b1eb08e7409060532e753d1413a999a","IS_SHOW_COLOR":true,"CALLBACK_TEMPLATE_ID":"\t2-t6lo4aKSxist_aM-iNcvrJeUat-aPB8J9DBldhtds","CALLBACK_USERS":[{"name":"自己","id":"o0cTH5kDb74CTUXx7sttyPMEES3o"}],"USERS":[{"name":"庆饱饱","id":"o0cTH5tI4Ybwx8bXEUZ449hBwWQs","useTemplateId":"mxNj9KZGycz4IZZBVMlwjLaITEvzyvVuYbqUwbsiVs4","province":"河北","city":"保定","horoscopeDate":"05-12","horoscopeDateType":"今日","openUrl":"https://top.baidu.com/board","festivals":[{"type":"*生日","name":"庆饱饱破壳日","date":"04-01","year":"2002"},{"type":"*生日","name":"天哥诞辰","date":"02-12","year":"2003"}],"customizedDateList":[{"keyword":"相爱纪念日","date":"2020-10-01"}]},{"name":"天哥","id":"o0cTH5kDb74CTUXx7sttyPMEES3o","useTemplateId":"mxNj9KZGycz4IZZBVMlwjLaITEvzyvVuYbqUwbsiVs4","province":"河北","city":"保定","horoscopeDate":"03-14","horoscopeDateType":"今日","openUrl":"https://top.baidu.com/board","festivals":[{"type":"*生日","name":"庆饱饱破壳日","date":"04-01","year":"2002"},{"type":"*生日","name":"天哥诞辰","date":"02-12","year":"2003"}],"customizedDateList":[{"keyword":"相爱纪念日","date":"2020-10-01"}]}],"SWITCH":{"weather":true,"holidaytts":true,"CIBA":false,"oneTalk":true,"earthyLoveWords":false,"momentCopyrighting":false,"poisonChickenSoup":false,"poetry":false,"horoscope":true,"birthdayMessage":true}}
+/* eslint-disable */
+
+/**
+ * 此项目配置为方便新人使用，已缩减至最简配置。
+ * 如若想使用更多功能，请查考文档中的 【3. config参数说明】 
+ * 自行添加属性，以支持更多个性化功能
+ */
+const USER_CONFIG = {
+
+  // 使用微信测试号：公众号APP_ID
+  APP_ID: 'wx9c9b231479e000d9',
+
+  // 使用微信测试号：公众号APP_SECRET
+  APP_SECRET: '3b1eb08e7409060532e753d1413a999a',
+
+  PROVINCE: '河北',
+  CITY: '保定',
+
+  USERS: [
+    {
+      // 想要发送的人的名字
+      name: '庆饱饱',
+      // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
+      id: 'o0cTH5tI4Ybwx8bXEUZ449hBwWQs',
+      // 使用微信测试号：你想对他发送的模板消息的模板ID
+      useTemplateId: 'mxNj9KZGycz4IZZBVMlwjLaITEvzyvVuYbqUwbsiVs4',
+      festivals: [
+        // 注意：此条配置日期为阴历日期
+        {
+          type: '生日', name: '庆饱饱', year: '2002', date: '04-01',
+        },
+      ],
+      // 我们在一起已经有xxxx天了的配置
+      customizedDateList: [
+        // 在一起的日子
+        { keyword: 'love_day', date: '2020-10-01' },
+        // 结婚纪念日
+        { keyword: 'marry_day', date: '2022-09-09' },
+      ],
+    },
+    {
+      // 想要发送的人的名字
+      name: '天哥',
+      // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
+      id: 'o0cTH5kDb74CTUXx7sttyPMEES3o',
+      // 使用微信测试号：你想对他发送的模板消息的模板ID
+      useTemplateId: 'mxNj9KZGycz4IZZBVMlwjLaITEvzyvVuYbqUwbsiVs4',
+      // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
+      horoscopeDate: '12-27',
+      festivals: [
+        // 注意：此条配置日期为阴历日期
+        {
+          type: '生日', name: '天哥', year: '2003', date: '02-12',
+        },
+        {
+          type: '节日', name: '相识纪念日', year: '2020', date: '09-03',
+        },
+      ],
+      // 我们在一起已经有xxxx天了的配置
+      customizedDateList: [
+        // 在一起的日子
+        { keyword: 'love_day', date: '2020-10-01' },
+        // 结婚纪念日
+        { keyword: 'marry_day', date: '2022-09-09' },
+      ],
+    },
+  ],
+
+
+  // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
+  CALLBACK_TEMPLATE_ID: '2-t6lo4aKSxist_aM-iNcvrJeUat-aPB8J9DBldhtds',
+
+  CALLBACK_USERS: [
+    {
+      name: '自己',
+      // 使用微信测试号：自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
+      id: 'o0cTH5kDb74CTUXx7sttyPMEES3o',
+    }
+  ],
+
+}
+
+module.exports = USER_CONFIG
+
