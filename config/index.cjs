@@ -23,11 +23,14 @@ const USER_CONFIG = {
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: 'o0cTH5tI4Ybwx8bXEUZ449hBwWQs',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
-      useTemplateId: '0R66GRLjsT02WPfvd-NENuD3AkOg8v0bb-bpzk6e4No',
+      useTemplateId: 'fT6AyKFZq3c-JzLPbnP2Vk46YkvzVLw5tyBP7s_c5Iw',
       festivals: [
         // 注意：此条配置日期为阴历日期
         {
           type: '*生日', name: '庆饱饱', year: '2002', date: '04-01',
+        },
+        {
+          type: '节日', name: '相爱纪念日', year: '2020', date: '09-03',
         },
       ],
       // 我们在一起已经有xxxx天了的配置
@@ -44,16 +47,14 @@ const USER_CONFIG = {
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: 'o0cTH5kDb74CTUXx7sttyPMEES3o',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
-      useTemplateId: '0R66GRLjsT02WPfvd-NENuD3AkOg8v0bb-bpzk6e4No',
-      // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
-      horoscopeDate: '12-27',
+      useTemplateId: 'fT6AyKFZq3c-JzLPbnP2Vk46YkvzVLw5tyBP7s_c5Iw',
       festivals: [
         // 注意：此条配置日期为阴历日期
         {
           type: '*生日', name: '天哥', year: '2003', date: '02-12',
         },
         {
-          type: '节日', name: '相识纪念日', year: '2020', date: '09-03',
+          type: '节日', name: '相爱纪念日', year: '2020', date: '09-03',
         },
       ],
       // 我们在一起已经有xxxx天了的配置
